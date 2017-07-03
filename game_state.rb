@@ -37,10 +37,8 @@ class PlayState
     if players_alive.size < 2
       @game.state = EndState.new players_alive.first
     elsif @player_number == 1
-      puts 2
       @game.state = PlayState.new @game, 2
     else
-      puts 1
       @game.state = PlayState.new @game, 1
     end
   end
